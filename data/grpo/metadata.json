@@ -1,0 +1,70 @@
+{
+  "schema_version": "shopping-grpo-dataset-v1",
+  "environment": "shopsimulator-environment-v2.1",
+  "reward": "shopsimulator-reward-v3",
+  "provenance": {
+    "rebuilt": true,
+    "seed": 20260808,
+    "reason": "Keep active Pure V4 SFT, GRPO, and Final-200 task-disjoint",
+    "exclusion_policy": "pure-v4-and-final-evaluation-disjoint-v1",
+    "note": "No difficulty probe; probe_steps and length_bucket are unavailable",
+    "original_train_tasks": 1000,
+    "original_validation_tasks": 50,
+    "removed_train_task_ids": [
+      7682,
+      8993,
+      11298,
+      12380,
+      14953,
+      17219
+    ],
+    "removed_validation_task_ids": [],
+    "input_snapshot": {
+      "train_jsonl_sha256": "4e6d441e1a432223741b2968d1622d1e77ab855a7d8fe9275cd7df2bbf5565bf",
+      "train_parquet_sha256": "98bb1799a42916b6ca2a1a2618f11cfec60f428e99e6ada448a78361768206e5",
+      "validation_jsonl_sha256": "11e0e15ec9fe6911c7c5b8e8525ad06a0b020367e58461e6ab1baa3cdbe73d61",
+      "validation_parquet_sha256": "8c9fbdd22bf6d191d1da6bcca9c1612e170bb928483c4ce0c8d0934f9ba69317"
+    },
+    "exclusion_sources": {
+      "sft_source": {
+        "path": "data/sft_pure_v4/all.jsonl",
+        "sha256": "7b70db7174daf7660209800441c06b2502d602969881b524ff0d2a3be5fb981e",
+        "tasks": 1192
+      },
+      "sft_manifest": {
+        "path": "data/sft_curriculum/manifest.json",
+        "sha256": "d17d2a6f66eb314d59d8e63edef208b6018ce348718f24d85d1a566c96695f7a",
+        "tasks": 1192
+      },
+      "final_evaluation": {
+        "path": "data/evaluation/tasks.jsonl",
+        "sha256": "d99112a20ef47534c27a32e4b38229bf048dcc6b06fef2e3e919aac3093662f5",
+        "tasks": 200
+      }
+    }
+  },
+  "train": {
+    "jsonl": "data/grpo/train.jsonl",
+    "jsonl_sha256": "591f77fff59212ed11f05e776b77a1805568b86e8856c077f8f2e42c302c7cf1",
+    "tasks": 994,
+    "parquet": "data/grpo/train.parquet",
+    "parquet_sha256": "4cec22be32695080446ba50bafa43cb3d5d275fde7556bc5e33808b11648391d"
+  },
+  "validation": {
+    "jsonl": "data/grpo/validation.jsonl",
+    "jsonl_sha256": "11e0e15ec9fe6911c7c5b8e8525ad06a0b020367e58461e6ab1baa3cdbe73d61",
+    "tasks": 50,
+    "parquet": "data/grpo/validation.parquet",
+    "parquet_sha256": "8c9fbdd22bf6d191d1da6bcca9c1612e170bb928483c4ce0c8d0934f9ba69317"
+  },
+  "audit": {
+    "jsonl_parquet_order_aligned": true,
+    "unique_task_ids": true,
+    "train_validation_overlap": 0,
+    "active_sft_overlap": 0,
+    "sft_evaluation_overlap": 0,
+    "final_evaluation_overlap": 0,
+    "train_tasks": 994,
+    "validation_tasks": 50
+  }
+}

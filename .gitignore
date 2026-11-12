@@ -1,0 +1,67 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+.DS_Store
+.venv/
+.venv-*/
+venv/
+*.egg-info/
+build/
+dist/
+.env
+*.log
+
+checkpoints/
+models/
+swanlog/
+swanlab/
+wandb/
+logs/
+
+# Generated artifacts are ignored unless explicitly archived below.
+/outputs/*
+
+# Raw trajectories and rollout dumps (including the legacy .jsons format).
+trajectories*.jsonl
+trajectories*.jsons
+trajectories*.json
+trajectory*.jsonl
+trajectory*.json
+rollout*.jsonl
+rollout*.json
+trace*.jsonl
+trace*.json
+
+# SFT conversations contain full trajectories; keep metadata and task lists.
+/data/sft/**/*.jsonl
+/data/sft_pure_v4/all.jsonl
+/data/sft_curriculum/**/*.jsonl
+
+# Archive training logs, evaluation trajectories and reports.
+!/outputs/logs/
+!/outputs/logs/**
+!/outputs/evaluation/
+!/outputs/evaluation/**
+!/environments/ShopSimulator/shop_env/shop_env/shop_agent.log
+!/examples/trajectories.jsonl
+
+# Keep training records stored beside checkpoints; weights and optimizer state
+# remain ignored, along with generated tokenizers and compilation caches.
+!/outputs/models/
+/outputs/models/**
+!/outputs/models/**/
+!/outputs/models/**/training_diagnostics.jsonl
+!/outputs/models/**/train_summary.json
+!/outputs/models/**/trainer_state.json
+!/outputs/models/**/latest_checkpointed_iteration.txt
+!/outputs/models/**/fsdp_config.json
+!/outputs/models/**/lora_train_meta.json
+!/outputs/models/**/adapter_config.json
+!/outputs/models/**/merge_manifest.json
+!/outputs/models/**/hydra/**
+!/outputs/models/**/swanlab/**

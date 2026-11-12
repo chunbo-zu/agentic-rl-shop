@@ -1,0 +1,10 @@
+{
+  "operation": "peft_merge_and_unload",
+  "source": {
+    "base_model": "/home/ml-user/workdir/zcb26/shopping-rl/outputs/models/sft-curriculum/stage-b/merged",
+    "adapter": "/home/ml-user/workdir/zcb26/shopping-rl/outputs/models/sft-curriculum/stage-c/adapter",
+    "model_type": "qwen3_5"
+  },
+  "output": "/home/ml-user/workdir/zcb26/shopping-rl/outputs/models/sft-curriculum/stage-c/merged",
+  "next_step": "load this standalone checkpoint as GRPO base and attach a new LoRA adapter"
+}

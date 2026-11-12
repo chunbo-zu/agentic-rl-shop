@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="920" viewBox="0 0 1600 920">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/><stop offset="1" stop-color="#f1f5ff"/>
+    </linearGradient>
+    <linearGradient id="model" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2563eb"/><stop offset="1" stop-color="#1d4ed8"/></linearGradient>
+    <linearGradient id="harness" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#6d28d9"/></linearGradient>
+    <linearGradient id="env" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#059669"/><stop offset="1" stop-color="#047857"/></linearGradient>
+    <linearGradient id="reward" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f59e0b"/><stop offset="1" stop-color="#d97706"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#172554" flood-opacity="0.12"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#64748b"/></marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2563eb"/></marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7c3aed"/></marker>
+    <style>
+      .title { font: 800 34px Inter, "Noto Sans SC", sans-serif; fill: #172033; }
+      .subtitle { font: 500 16px Inter, "Noto Sans SC", sans-serif; fill: #64748b; }
+      .lane { font: 800 14px Inter, "Noto Sans SC", sans-serif; fill: #64748b; letter-spacing: .08em; }
+      .label { font: 700 16px Inter, "Noto Sans SC", sans-serif; fill: #172033; }
+      .body { font: 500 14px Inter, "Noto Sans SC", sans-serif; fill: #334155; }
+      .small { font: 500 12px Inter, "Noto Sans SC", sans-serif; fill: #64748b; }
+      .pill { font: 700 12px Inter, "Noto Sans SC", sans-serif; fill: white; }
+      .white { fill: white; }
+      .line { stroke: #64748b; stroke-width: 2.5; fill: none; marker-end: url(#arrow); }
+      .lineBlue { stroke: #2563eb; stroke-width: 2.8; fill: none; marker-end: url(#arrowBlue); }
+      .linePurple { stroke: #7c3aed; stroke-width: 2.8; fill: none; marker-end: url(#arrowPurple); }
+      .dashed { stroke-dasharray: 8 7; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="920" fill="url(#bg)"/>
+  <text x="70" y="70" class="title">Shopping-RL：Agent Harness 交互闭环</text>
+  <text x="70" y="102" class="subtitle">veRL ToolAgentLoop + Action Guard + ShopSimulator + Observation Projection + Reward v3</text>
+
+  <rect x="70" y="140" width="1460" height="66" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="94" y="157" width="126" height="32" rx="16" fill="url(#model)"/><text x="157" y="178" text-anchor="middle" class="pill">ACTOR VISIBLE</text>
+  <text x="250" y="181" class="body">用户 Query + 当前投影 Observation；隐藏 Gold / TaskFacts 不进入模型上下文</text>
+
+  <text x="100" y="246" class="lane">ACTOR</text>
+  <text x="450" y="246" class="lane">HARNESS</text>
+  <text x="900" y="246" class="lane">ENVIRONMENT</text>
+  <text x="1280" y="246" class="lane">DIAGNOSTICS</text>
+
+  <line x1="390" y1="260" x2="390" y2="840" stroke="#dbe4f0" stroke-width="2"/>
+  <line x1="850" y1="260" x2="850" y2="840" stroke="#dbe4f0" stroke-width="2"/>
+  <line x1="1220" y1="260" x2="1220" y2="840" stroke="#dbe4f0" stroke-width="2"/>
+
+  <rect x="110" y="300" width="220" height="76" rx="16" fill="#eff6ff" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="220" y="332" text-anchor="middle" class="label">Assistant</text>
+  <text x="220" y="356" text-anchor="middle" class="body">tool call / action token</text>
+  <line x1="330" y1="338" x2="470" y2="338" class="lineBlue"/>
+
+  <rect x="470" y="285" width="300" height="106" rx="16" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="2"/>
+  <text x="620" y="318" text-anchor="middle" class="label">Action Guard</text>
+  <text x="620" y="343" text-anchor="middle" class="body">Schema / 当前页 / 单工具调用</text>
+  <text x="620" y="367" text-anchor="middle" class="small">只允许使用最新 Observation 中的目标</text>
+  <line x1="770" y1="338" x2="920" y2="338" class="linePurple"/>
+
+  <rect x="920" y="285" width="240" height="106" rx="16" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="2"/>
+  <text x="1040" y="318" text-anchor="middle" class="label">ShopSimulator</text>
+  <text x="1040" y="343" text-anchor="middle" class="body">reset / step / release</text>
+  <text x="1040" y="367" text-anchor="middle" class="small">环境槽位与任务 session</text>
+  <line x1="1040" y1="391" x2="1040" y2="446" class="line"/>
+
+  <rect x="920" y="465" width="240" height="106" rx="16" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="2"/>
+  <text x="1040" y="498" text-anchor="middle" class="label">Environment result</text>
+  <text x="1040" y="523" text-anchor="middle" class="body">raw observation + reward</text>
+  <text x="1040" y="547" text-anchor="middle" class="small">done / over / terminal state</text>
+  <line x1="920" y1="518" x2="770" y2="518" class="line"/>
+
+  <rect x="470" y="465" width="300" height="106" rx="16" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="2"/>
+  <text x="620" y="498" text-anchor="middle" class="label">Observation Projection</text>
+  <text x="620" y="523" text-anchor="middle" class="body">按页型限长 / 保留 ASIN 与 footer</text>
+  <text x="620" y="547" text-anchor="middle" class="small">默认 1,536 / 4,096 / 768 token budgets</text>
+  <line x1="470" y1="518" x2="330" y2="518" class="linePurple"/>
+
+  <rect x="110" y="465" width="220" height="106" rx="16" fill="#eff6ff" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="220" y="498" text-anchor="middle" class="label">Next turn context</text>
+  <text x="220" y="523" text-anchor="middle" class="body">assistant + tool history</text>
+  <text x="220" y="547" text-anchor="middle" class="small">返回模型继续生成</text>
+  <path d="M220 465 C220 405 220 405 220 376" class="lineBlue"/>
+
+  <rect x="1270" y="285" width="220" height="106" rx="16" fill="#fff7ed" stroke="#fed7aa" stroke-width="2"/>
+  <text x="1380" y="318" text-anchor="middle" class="label">Guard / context</text>
+  <text x="1380" y="343" text-anchor="middle" class="body">拒绝、截断、token</text>
+  <text x="1380" y="367" text-anchor="middle" class="small">写入 trajectory diagnostics</text>
+  <line x1="1160" y1="338" x2="1270" y2="338" class="line"/>
+
+  <rect x="1270" y="465" width="220" height="106" rx="16" fill="#fff7ed" stroke="#fed7aa" stroke-width="2"/>
+  <text x="1380" y="498" text-anchor="middle" class="label">Reward v3</text>
+  <text x="1380" y="523" text-anchor="middle" class="body">terminal validation</text>
+  <text x="1380" y="547" text-anchor="middle" class="small">utility / reward_type / valid</text>
+  <line x1="1160" y1="518" x2="1270" y2="518" class="line"/>
+
+  <rect x="470" y="650" width="690" height="112" rx="18" fill="#172033"/>
+  <text x="815" y="686" text-anchor="middle" class="white" style="font:800 17px Inter, 'Noto Sans SC', sans-serif">Terminal boundary</text>
+  <text x="815" y="713" text-anchor="middle" style="font:500 14px Inter, 'Noto Sans SC', sans-serif;fill:#cbd5e1">done + over + Reward v3 合法 → output.reward_score</text>
+  <text x="815" y="738" text-anchor="middle" style="font:500 14px Inter, 'Noto Sans SC', sans-serif;fill:#cbd5e1">异常 / Reward 不可验证 → infrastructure_invalid / sampling_invalid</text>
+  <line x1="1040" y1="571" x2="1040" y2="650" class="line"/>
+  <line x1="1270" y1="518" x2="1160" y2="690" class="line dashed"/>
+
+  <rect x="70" y="800" width="1460" height="70" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="100" y="830" class="label">Harness 的价值</text>
+  <text x="100" y="854" class="body">把模型生成、工具协议、环境生命周期、长上下文、终局奖励和训练诊断接成一个可回放、可审计的闭环。</text>
+</svg>

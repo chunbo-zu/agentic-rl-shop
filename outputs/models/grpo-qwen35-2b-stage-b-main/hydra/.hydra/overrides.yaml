@@ -1,0 +1,6 @@
+- trainer.logger=[console,swanlab]
+- trainer.experiment_name=grpo-qwen35-2b-stage-b-main
+- trainer.n_gpus_per_node=4
+- trainer.total_training_steps=100
+- trainer.save_freq=25
+- trainer.test_freq=25

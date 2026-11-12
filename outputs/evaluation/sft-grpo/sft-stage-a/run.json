@@ -1,0 +1,15 @@
+{
+  "label": "sft-stage-a",
+  "model_path": "/home/ml-user/workdir/zcb26/shopping-rl/outputs/models/sft-curriculum/stage-a/merged",
+  "benchmark": "/home/ml-user/workdir/zcb26/shopping-rl/data/evaluation/tasks.jsonl",
+  "benchmark_sha256": "d99112a20ef47534c27a32e4b38229bf048dcc6b06fef2e3e919aac3093662f5",
+  "served_model_name": "shopping-agent-eval",
+  "max_steps": 35,
+  "max_tokens": 512,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "context_window": 24576,
+  "context_safety_margin": 512,
+  "observation_token_budget": 1536,
+  "context_compaction": false
+}

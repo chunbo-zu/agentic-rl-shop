@@ -1,0 +1,237 @@
+{
+  "train_examples": 799,
+  "validation_examples": 88,
+  "train_loss": 0.3596467912197113,
+  "metrics": {
+    "train_runtime": 1269.9884,
+    "train_samples_per_second": 0.629,
+    "train_steps_per_second": 0.079,
+    "total_flos": 4.892412225572045e+16,
+    "train_loss": 0.3596467912197113,
+    "epoch": 1.0
+  },
+  "log_history": [
+    {
+      "loss": 0.4142183303833008,
+      "grad_norm": 0.9031943082809448,
+      "learning_rate": 6.927835051546391e-05,
+      "epoch": 0.05,
+      "step": 5
+    },
+    {
+      "loss": 0.4056395530700684,
+      "grad_norm": 0.9280926585197449,
+      "learning_rate": 6.56701030927835e-05,
+      "epoch": 0.1,
+      "step": 10
+    },
+    {
+      "loss": 0.36781399250030516,
+      "grad_norm": 0.749970555305481,
+      "learning_rate": 6.206185567010308e-05,
+      "epoch": 0.15,
+      "step": 15
+    },
+    {
+      "loss": 0.36913294792175294,
+      "grad_norm": 0.621543824672699,
+      "learning_rate": 5.8453608247422675e-05,
+      "epoch": 0.2,
+      "step": 20
+    },
+    {
+      "loss": 0.4039423942565918,
+      "grad_norm": 0.6814281344413757,
+      "learning_rate": 5.4845360824742265e-05,
+      "epoch": 0.25,
+      "step": 25
+    },
+    {
+      "loss": 0.36951749324798583,
+      "grad_norm": 0.6353209614753723,
+      "learning_rate": 5.123711340206185e-05,
+      "epoch": 0.3,
+      "step": 30
+    },
+    {
+      "loss": 0.3722102165222168,
+      "grad_norm": 0.6534178256988525,
+      "learning_rate": 4.7628865979381444e-05,
+      "epoch": 0.35,
+      "step": 35
+    },
+    {
+      "loss": 0.3460566282272339,
+      "grad_norm": 0.6121461391448975,
+      "learning_rate": 4.4020618556701026e-05,
+      "epoch": 0.4,
+      "step": 40
+    },
+    {
+      "loss": 0.38607940673828123,
+      "grad_norm": 0.6273382306098938,
+      "learning_rate": 4.041237113402061e-05,
+      "epoch": 0.45,
+      "step": 45
+    },
+    {
+      "loss": 0.3278846263885498,
+      "grad_norm": 0.6267538666725159,
+      "learning_rate": 3.6804123711340206e-05,
+      "epoch": 0.5,
+      "step": 50
+    },
+    {
+      "loss": 0.3303687572479248,
+      "grad_norm": 0.6051735281944275,
+      "learning_rate": 3.319587628865979e-05,
+      "epoch": 0.55,
+      "step": 55
+    },
+    {
+      "loss": 0.3403534650802612,
+      "grad_norm": 0.6010152697563171,
+      "learning_rate": 2.9587628865979378e-05,
+      "epoch": 0.6,
+      "step": 60
+    },
+    {
+      "loss": 0.3504214286804199,
+      "grad_norm": 0.6833986043930054,
+      "learning_rate": 2.5979381443298967e-05,
+      "epoch": 0.65,
+      "step": 65
+    },
+    {
+      "loss": 0.3736105918884277,
+      "grad_norm": 0.6799763441085815,
+      "learning_rate": 2.2371134020618554e-05,
+      "epoch": 0.7,
+      "step": 70
+    },
+    {
+      "loss": 0.3553554773330688,
+      "grad_norm": 0.7274312973022461,
+      "learning_rate": 1.8762886597938143e-05,
+      "epoch": 0.75,
+      "step": 75
+    },
+    {
+      "loss": 0.3257267951965332,
+      "grad_norm": 0.6763274073600769,
+      "learning_rate": 1.5154639175257731e-05,
+      "epoch": 0.8,
+      "step": 80
+    },
+    {
+      "loss": 0.3062140703201294,
+      "grad_norm": 0.6364202499389648,
+      "learning_rate": 1.1546391752577319e-05,
+      "epoch": 0.85,
+      "step": 85
+    },
+    {
+      "loss": 0.31894545555114745,
+      "grad_norm": 0.6219509840011597,
+      "learning_rate": 7.938144329896907e-06,
+      "epoch": 0.9,
+      "step": 90
+    },
+    {
+      "loss": 0.3759163856506348,
+      "grad_norm": 0.6760984063148499,
+      "learning_rate": 4.3298969072164946e-06,
+      "epoch": 0.95,
+      "step": 95
+    },
+    {
+      "loss": 0.3535278081893921,
+      "grad_norm": 0.6268980503082275,
+      "learning_rate": 7.216494845360824e-07,
+      "epoch": 1.0,
+      "step": 100
+    },
+    {
+      "eval_loss": 0.338927298784256,
+      "eval_runtime": 21.5965,
+      "eval_samples_per_second": 4.075,
+      "eval_steps_per_second": 1.019,
+      "epoch": 1.0,
+      "step": 100
+    },
+    {
+      "train_runtime": 1269.9884,
+      "train_samples_per_second": 0.629,
+      "train_steps_per_second": 0.079,
+      "total_flos": 4.892412225572045e+16,
+      "train_loss": 0.3596467912197113,
+      "epoch": 1.0,
+      "step": 100
+    }
+  ],
+  "peak_gpu_memory_gib": 12.39,
+  "total_time_minutes": 23.6,
+  "monitoring": {
+    "backend": "swanlab",
+    "project": "shopping-grpo-sft-curriculum",
+    "run_name": "pure-v4-stage-b",
+    "mode": "online"
+  },
+  "acceleration": {
+    "dtype": "bf16",
+    "liger_kernel": true,
+    "attention_implementation": "sdpa",
+    "qlora": false
+  },
+  "arguments": {
+    "model": "/home/ml-user/workdir/zcb26/shopping-rl/outputs/models/sft-curriculum/stage-a/merged",
+    "train": "/home/ml-user/workdir/zcb26/shopping-rl/data/sft_pure_v4/all.jsonl",
+    "validation": "/home/ml-user/workdir/zcb26/shopping-rl/data/sft_pure_v4/all.jsonl",
+    "curriculum_manifest": "/home/ml-user/workdir/zcb26/shopping-rl/data/sft_curriculum/manifest.json",
+    "curriculum_stage": "b",
+    "output": "/home/ml-user/workdir/zcb26/shopping-rl/outputs/models/sft-curriculum/stage-b/adapter",
+    "max_length": 24576,
+    "epochs": 1.0,
+    "per_device_train_batch_size": 1,
+    "per_device_eval_batch_size": 1,
+    "gradient_accumulation_steps": 2,
+    "learning_rate": 7e-05,
+    "warmup_ratio": 0.03,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj",
+      "in_proj_qkv",
+      "in_proj_z",
+      "in_proj_b",
+      "in_proj_a",
+      "out_proj"
+    ],
+    "dtype": "bf16",
+    "bf16": false,
+    "revision": null,
+    "liger_kernel": true,
+    "attention_implementation": "sdpa",
+    "qlora": false,
+    "gradient_checkpointing": true,
+    "logging_steps": 5,
+    "save_total_limit": 3,
+    "seed": 42,
+    "train_count": null,
+    "train_ratio": null,
+    "subset_seed": 42,
+    "resume_from_checkpoint": null,
+    "max_steps": -1,
+    "swanlab": true,
+    "swanlab_project": "shopping-grpo-sft-curriculum",
+    "swanlab_run_name": "pure-v4-stage-b",
+    "swanlab_mode": "online"
+  }
+}

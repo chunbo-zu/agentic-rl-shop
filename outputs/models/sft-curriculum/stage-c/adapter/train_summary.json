@@ -1,0 +1,279 @@
+{
+  "train_examples": 1069,
+  "validation_examples": 118,
+  "train_loss": 0.33239852403526876,
+  "metrics": {
+    "train_runtime": 2243.1428,
+    "train_samples_per_second": 0.477,
+    "train_steps_per_second": 0.06,
+    "total_flos": 7.136906863601254e+16,
+    "train_loss": 0.33239852403526876,
+    "epoch": 1.0
+  },
+  "log_history": [
+    {
+      "loss": 0.3278310537338257,
+      "grad_norm": 0.6158831119537354,
+      "learning_rate": 4e-05,
+      "epoch": 0.03731343283582089,
+      "step": 5
+    },
+    {
+      "loss": 0.35886187553405763,
+      "grad_norm": 0.7701537609100342,
+      "learning_rate": 4.8449612403100775e-05,
+      "epoch": 0.07462686567164178,
+      "step": 10
+    },
+    {
+      "loss": 0.36222479343414304,
+      "grad_norm": 0.617997407913208,
+      "learning_rate": 4.651162790697675e-05,
+      "epoch": 0.11194029850746269,
+      "step": 15
+    },
+    {
+      "loss": 0.3281454563140869,
+      "grad_norm": 0.6514633297920227,
+      "learning_rate": 4.4573643410852715e-05,
+      "epoch": 0.14925373134328357,
+      "step": 20
+    },
+    {
+      "loss": 0.3276544094085693,
+      "grad_norm": 0.5637980699539185,
+      "learning_rate": 4.263565891472868e-05,
+      "epoch": 0.1865671641791045,
+      "step": 25
+    },
+    {
+      "loss": 0.3211639165878296,
+      "grad_norm": 0.5705870389938354,
+      "learning_rate": 4.0697674418604655e-05,
+      "epoch": 0.22388059701492538,
+      "step": 30
+    },
+    {
+      "loss": 0.32717936038970946,
+      "grad_norm": 0.6504319906234741,
+      "learning_rate": 3.875968992248062e-05,
+      "epoch": 0.26119402985074625,
+      "step": 35
+    },
+    {
+      "loss": 0.36728012561798096,
+      "grad_norm": 0.5910057425498962,
+      "learning_rate": 3.682170542635659e-05,
+      "epoch": 0.29850746268656714,
+      "step": 40
+    },
+    {
+      "loss": 0.3340126037597656,
+      "grad_norm": 0.49470341205596924,
+      "learning_rate": 3.488372093023256e-05,
+      "epoch": 0.3358208955223881,
+      "step": 45
+    },
+    {
+      "loss": 0.33838510513305664,
+      "grad_norm": 0.4415314197540283,
+      "learning_rate": 3.294573643410852e-05,
+      "epoch": 0.373134328358209,
+      "step": 50
+    },
+    {
+      "loss": 0.3021430015563965,
+      "grad_norm": 0.4641720652580261,
+      "learning_rate": 3.1007751937984497e-05,
+      "epoch": 0.41044776119402987,
+      "step": 55
+    },
+    {
+      "loss": 0.3388733625411987,
+      "grad_norm": 0.5742536187171936,
+      "learning_rate": 2.9069767441860467e-05,
+      "epoch": 0.44776119402985076,
+      "step": 60
+    },
+    {
+      "loss": 0.33316500186920167,
+      "grad_norm": 0.49037182331085205,
+      "learning_rate": 2.7131782945736434e-05,
+      "epoch": 0.48507462686567165,
+      "step": 65
+    },
+    {
+      "loss": 0.30295653343200685,
+      "grad_norm": 0.5282211899757385,
+      "learning_rate": 2.5193798449612404e-05,
+      "epoch": 0.5223880597014925,
+      "step": 70
+    },
+    {
+      "loss": 0.3281350612640381,
+      "grad_norm": 0.5325518250465393,
+      "learning_rate": 2.3255813953488374e-05,
+      "epoch": 0.5597014925373134,
+      "step": 75
+    },
+    {
+      "loss": 0.36930749416351316,
+      "grad_norm": 0.5658868551254272,
+      "learning_rate": 2.131782945736434e-05,
+      "epoch": 0.5970149253731343,
+      "step": 80
+    },
+    {
+      "loss": 0.35397698879241946,
+      "grad_norm": 0.47936582565307617,
+      "learning_rate": 1.937984496124031e-05,
+      "epoch": 0.6343283582089553,
+      "step": 85
+    },
+    {
+      "loss": 0.3279162883758545,
+      "grad_norm": 0.5584943890571594,
+      "learning_rate": 1.744186046511628e-05,
+      "epoch": 0.6716417910447762,
+      "step": 90
+    },
+    {
+      "loss": 0.30322258472442626,
+      "grad_norm": 0.5320362448692322,
+      "learning_rate": 1.5503875968992248e-05,
+      "epoch": 0.7089552238805971,
+      "step": 95
+    },
+    {
+      "loss": 0.3155092239379883,
+      "grad_norm": 0.557802677154541,
+      "learning_rate": 1.3565891472868217e-05,
+      "epoch": 0.746268656716418,
+      "step": 100
+    },
+    {
+      "loss": 0.31579246520996096,
+      "grad_norm": 0.4952649176120758,
+      "learning_rate": 1.1627906976744187e-05,
+      "epoch": 0.7835820895522388,
+      "step": 105
+    },
+    {
+      "loss": 0.3478572368621826,
+      "grad_norm": 0.5236057639122009,
+      "learning_rate": 9.689922480620156e-06,
+      "epoch": 0.8208955223880597,
+      "step": 110
+    },
+    {
+      "loss": 0.32799153327941893,
+      "grad_norm": 0.5022929310798645,
+      "learning_rate": 7.751937984496124e-06,
+      "epoch": 0.8582089552238806,
+      "step": 115
+    },
+    {
+      "loss": 0.3279332876205444,
+      "grad_norm": 0.48467594385147095,
+      "learning_rate": 5.8139534883720935e-06,
+      "epoch": 0.8955223880597015,
+      "step": 120
+    },
+    {
+      "loss": 0.3084394454956055,
+      "grad_norm": 0.49978360533714294,
+      "learning_rate": 3.875968992248062e-06,
+      "epoch": 0.9328358208955224,
+      "step": 125
+    },
+    {
+      "loss": 0.32712879180908205,
+      "grad_norm": 0.5259905457496643,
+      "learning_rate": 1.937984496124031e-06,
+      "epoch": 0.9701492537313433,
+      "step": 130
+    },
+    {
+      "eval_loss": 0.34782731533050537,
+      "eval_runtime": 41.8239,
+      "eval_samples_per_second": 2.821,
+      "eval_steps_per_second": 0.717,
+      "epoch": 1.0,
+      "step": 134
+    },
+    {
+      "train_runtime": 2243.1428,
+      "train_samples_per_second": 0.477,
+      "train_steps_per_second": 0.06,
+      "total_flos": 7.136906863601254e+16,
+      "train_loss": 0.33239852403526876,
+      "epoch": 1.0,
+      "step": 134
+    }
+  ],
+  "peak_gpu_memory_gib": 15.78,
+  "total_time_minutes": 40.9,
+  "monitoring": {
+    "backend": "swanlab",
+    "project": "shopping-grpo-sft-curriculum",
+    "run_name": "pure-v4-stage-c",
+    "mode": "online"
+  },
+  "acceleration": {
+    "dtype": "bf16",
+    "liger_kernel": true,
+    "attention_implementation": "sdpa",
+    "qlora": false
+  },
+  "arguments": {
+    "model": "/home/ml-user/workdir/zcb26/shopping-rl/outputs/models/sft-curriculum/stage-b/merged",
+    "train": "/home/ml-user/workdir/zcb26/shopping-rl/data/sft_pure_v4/all.jsonl",
+    "validation": "/home/ml-user/workdir/zcb26/shopping-rl/data/sft_pure_v4/all.jsonl",
+    "curriculum_manifest": "/home/ml-user/workdir/zcb26/shopping-rl/data/sft_curriculum/manifest.json",
+    "curriculum_stage": "c",
+    "output": "/home/ml-user/workdir/zcb26/shopping-rl/outputs/models/sft-curriculum/stage-c/adapter",
+    "max_length": 24576,
+    "epochs": 1.0,
+    "per_device_train_batch_size": 1,
+    "per_device_eval_batch_size": 1,
+    "gradient_accumulation_steps": 2,
+    "learning_rate": 5e-05,
+    "warmup_ratio": 0.03,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj",
+      "in_proj_qkv",
+      "in_proj_z",
+      "in_proj_b",
+      "in_proj_a",
+      "out_proj"
+    ],
+    "dtype": "bf16",
+    "bf16": false,
+    "revision": null,
+    "liger_kernel": true,
+    "attention_implementation": "sdpa",
+    "qlora": false,
+    "gradient_checkpointing": true,
+    "logging_steps": 5,
+    "save_total_limit": 3,
+    "seed": 42,
+    "train_count": null,
+    "train_ratio": null,
+    "subset_seed": 42,
+    "resume_from_checkpoint": null,
+    "max_steps": -1,
+    "swanlab": true,
+    "swanlab_project": "shopping-grpo-sft-curriculum",
+    "swanlab_run_name": "pure-v4-stage-c",
+    "swanlab_mode": "online"
+  }
+}

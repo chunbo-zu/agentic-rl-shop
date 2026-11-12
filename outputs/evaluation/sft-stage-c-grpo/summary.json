@@ -1,0 +1,84 @@
+{
+  "expected_tasks": 200,
+  "completed_tasks": 200,
+  "missing_tasks": [],
+  "done_tasks": 0,
+  "done_rate": 0.0,
+  "strict_successes": 0,
+  "strict_success_task_ids": [],
+  "strict_success_rate": 0.0,
+  "reward_contract": "shopsimulator-reward-v3",
+  "reward_version_counts": {
+    "unknown": 200
+  },
+  "reward_type_counts": {
+    "unknown": 200
+  },
+  "reward_type_rates": {
+    "gold_purchase": 0.0,
+    "valid_alternative_purchase": 0.0,
+    "partial_alternative_purchase": 0.0,
+    "wrong_purchase": 0.0,
+    "graceful_stop": 0.0,
+    "early_abstain": 0.0,
+    "repeat_loop": 0.0,
+    "max_steps": 0.0,
+    "reward_unverifiable": 0.0
+  },
+  "purchase_successes": 0,
+  "purchase_success_rate": 0.0,
+  "gold_purchases": 0,
+  "gold_purchase_rate": 0.0,
+  "reward_valid_tasks": 0,
+  "reward_valid_rate": 0.0,
+  "total_final_reward": 0.0,
+  "mean_final_reward": 0.0,
+  "mean_terminal_utility": 0.0,
+  "mean_weighted_score": 0.0,
+  "average_steps": 0.0,
+  "status_counts": {
+    "error": 200
+  },
+  "guard_reason_counts": {},
+  "context_projection": {
+    "projected_tool_observations": 0,
+    "truncated_tool_observations": 0,
+    "raw_tokens": 0,
+    "visible_tokens": 0,
+    "critical_footer_failures": 0,
+    "visible_asin_count": 0,
+    "visible_button_count": 0,
+    "guard_rejections": 0,
+    "guard_rejections_after_truncation": 0,
+    "action_attempts_after_truncation": 0,
+    "guard_rejection_rate_after_truncation": 0.0,
+    "context_overflow_tasks": 0,
+    "max_context_input_tokens": 0,
+    "success_by_truncation_bucket": {
+      "none": {
+        "tasks": 200,
+        "strict_successes": 0
+      },
+      "any": {
+        "tasks": 0,
+        "strict_successes": 0
+      }
+    }
+  },
+  "protocol": {
+    "benchmark": "data/evaluation/tasks.jsonl",
+    "model": "sft-stage-c-grpo",
+    "reward_contract": "shopsimulator-reward-v3",
+    "max_steps": 35,
+    "max_tokens": 512,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "context_window": 24576,
+    "context_safety_margin": 512,
+    "context_compaction": false,
+    "observation_token_budget": 1536,
+    "observation_detail_token_budget": 4096,
+    "observation_generic_token_budget": 768,
+    "observation_search_top_k": 20
+  }
+}

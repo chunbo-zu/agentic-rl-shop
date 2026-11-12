@@ -1,0 +1,15 @@
+{
+  "label": "grpo",
+  "model_path": "/data/shopping-rl/models/grpo-merged-step75",
+  "benchmark": "/home/ubuntu/Project/shopping-rl/data/grpo/validation.jsonl",
+  "benchmark_sha256": "11e0e15ec9fe6911c7c5b8e8525ad06a0b020367e58461e6ab1baa3cdbe73d61",
+  "served_model_name": "shopping-agent-eval",
+  "max_steps": 35,
+  "max_tokens": 512,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "context_window": 24576,
+  "context_safety_margin": 512,
+  "observation_token_budget": 1536,
+  "context_compaction": false
+}

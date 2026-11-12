@@ -1,0 +1,139 @@
+{
+  "train_examples": 256,
+  "validation_examples": 28,
+  "train_loss": 0.42497358843684196,
+  "metrics": {
+    "train_runtime": 339.0119,
+    "train_samples_per_second": 0.755,
+    "train_steps_per_second": 0.094,
+    "total_flos": 1.4255601643159552e+16,
+    "train_loss": 0.42497358843684196,
+    "epoch": 1.0
+  },
+  "log_history": [
+    {
+      "loss": 0.5827786445617675,
+      "grad_norm": 1.1861382722854614,
+      "learning_rate": 9.032258064516129e-05,
+      "epoch": 0.15625,
+      "step": 5
+    },
+    {
+      "loss": 0.44446001052856443,
+      "grad_norm": 0.8622258901596069,
+      "learning_rate": 7.419354838709677e-05,
+      "epoch": 0.3125,
+      "step": 10
+    },
+    {
+      "loss": 0.4110665798187256,
+      "grad_norm": 0.7404654622077942,
+      "learning_rate": 5.8064516129032266e-05,
+      "epoch": 0.46875,
+      "step": 15
+    },
+    {
+      "loss": 0.35441365242004397,
+      "grad_norm": 0.775888979434967,
+      "learning_rate": 4.1935483870967746e-05,
+      "epoch": 0.625,
+      "step": 20
+    },
+    {
+      "loss": 0.37214758396148684,
+      "grad_norm": 0.7581930160522461,
+      "learning_rate": 2.5806451612903226e-05,
+      "epoch": 0.78125,
+      "step": 25
+    },
+    {
+      "loss": 0.3918222665786743,
+      "grad_norm": 0.7410181164741516,
+      "learning_rate": 9.67741935483871e-06,
+      "epoch": 0.9375,
+      "step": 30
+    },
+    {
+      "eval_loss": 0.3543872535228729,
+      "eval_runtime": 7.2277,
+      "eval_samples_per_second": 3.874,
+      "eval_steps_per_second": 0.968,
+      "epoch": 1.0,
+      "step": 32
+    },
+    {
+      "train_runtime": 339.0119,
+      "train_samples_per_second": 0.755,
+      "train_steps_per_second": 0.094,
+      "total_flos": 1.4255601643159552e+16,
+      "train_loss": 0.42497358843684196,
+      "epoch": 1.0,
+      "step": 32
+    }
+  ],
+  "peak_gpu_memory_gib": 9.92,
+  "total_time_minutes": 6.9,
+  "monitoring": {
+    "backend": "swanlab",
+    "project": "shopping-grpo-sft-curriculum",
+    "run_name": "pure-v4-stage-a",
+    "mode": "online"
+  },
+  "acceleration": {
+    "dtype": "bf16",
+    "liger_kernel": true,
+    "attention_implementation": "sdpa",
+    "qlora": false
+  },
+  "arguments": {
+    "model": "/home/ml-user/workdir/zcb26/shopping-rl/../models/Qwen3.5-2B",
+    "train": "/home/ml-user/workdir/zcb26/shopping-rl/data/sft_pure_v4/all.jsonl",
+    "validation": "/home/ml-user/workdir/zcb26/shopping-rl/data/sft_pure_v4/all.jsonl",
+    "curriculum_manifest": "/home/ml-user/workdir/zcb26/shopping-rl/data/sft_curriculum/manifest.json",
+    "curriculum_stage": "a",
+    "output": "/home/ml-user/workdir/zcb26/shopping-rl/outputs/models/sft-curriculum/stage-a/adapter",
+    "max_length": 24576,
+    "epochs": 1.0,
+    "per_device_train_batch_size": 1,
+    "per_device_eval_batch_size": 1,
+    "gradient_accumulation_steps": 2,
+    "learning_rate": 0.0001,
+    "warmup_ratio": 0.03,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj",
+      "in_proj_qkv",
+      "in_proj_z",
+      "in_proj_b",
+      "in_proj_a",
+      "out_proj"
+    ],
+    "dtype": "bf16",
+    "bf16": false,
+    "revision": null,
+    "liger_kernel": true,
+    "attention_implementation": "sdpa",
+    "qlora": false,
+    "gradient_checkpointing": true,
+    "logging_steps": 5,
+    "save_total_limit": 3,
+    "seed": 42,
+    "train_count": null,
+    "train_ratio": null,
+    "subset_seed": 42,
+    "resume_from_checkpoint": null,
+    "max_steps": -1,
+    "swanlab": true,
+    "swanlab_project": "shopping-grpo-sft-curriculum",
+    "swanlab_run_name": "pure-v4-stage-a",
+    "swanlab_mode": "online"
+  }
+}
